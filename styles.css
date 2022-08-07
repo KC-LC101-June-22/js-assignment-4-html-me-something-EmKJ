@@ -1,6 +1,17 @@
 /* Write your CSS here! */
+body{
+    margin: 8px;
+    display: block;
+}
+p.funParagraph {
+    color: green;
+}
+#mainHeading{
+    color:red;
+}
+
 img {
-    width:100%;
+    max-width:100%;
 }
 h1, h2 {
     text-transform: uppercase;
