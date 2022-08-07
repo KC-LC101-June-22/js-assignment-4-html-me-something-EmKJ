@@ -1,1 +1,7 @@
 /* Write your CSS here! */
+img {
+    width:100%;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
