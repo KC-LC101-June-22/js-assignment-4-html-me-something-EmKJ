@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>Exciting Oatmeal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="color-scheme" content="light dark" /> -->
     <link rel="stylesheet" href="styles.css" class="style" />
+    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
     <!-- To meet assignment grading requirements. :p -->
@@ -11,16 +13,20 @@
     <p id="testP" class="funParagraph"></p>
     <!-- Actual content -->
     <nav>
-      <img src="images/logo.jpg" alt="brand logo" class="logo" />
-      <p class="brand-name">My Brand</p>
-      <ul>
-        <li><a href="#intro">Why Oats</a></li>
-        <li><a href="#oatmeal">Oatmeal</a></li>
-        <li><a href="#bakery">Baking</a></li>
-        <li><a href="#aboutoats">Fun Facts</a></li>
+      <div class="logo-wrapper">
+        <img src="images/logo.jpg" alt="brand logo" class="logo" />
+        <p class="brand-name">My Brand</p>
+      </div>
+      <button class="mobile-nav-toggle">
+        <img class="svg icon-hamburger" src="images/icon-hamgurger.svg" alt="" />
+        <img class="svg icon-close" src="images/icon-close.svg" alt="" />
+      </button>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#intro">Why Oats</a></li>
+        <li><a class="nav-link" href="#oatmeal">Oatmeal</a></li>
+        <li><a class="nav-link" href="#bakery">Baking</a></li>
+        <li><a class="nav-link" href="#aboutoats">Fun Facts</a></li>
       </ul>
-      <img class="icon-hamburger" src="images/icon-hamgurger.svg" alt="" />
-      <img class="icon-close" src="images/icon-close.svg" alt="" />
     </nav>
     <header id="welcome">
       <div class="poll">

@@ -2,6 +2,11 @@
 body{
     margin: 8px;
     display: block;
+    max-width:80rem;
+    background-color: #F5F1DC;
+    margin:auto;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
 }
 p.funParagraph {
     color: green;
@@ -13,6 +18,121 @@ p.funParagraph {
 img {
     max-width:100%;
 }
+figure{
+    width:100vw;
+    margin:0;
+    padding:0;
+}
+figcaption{
+    text-align: right;
+    font-size: .8em;
+    margin-right: 2em;
+}
+.svg{
+    width:1rem;
+}
 h1, h2 {
     text-transform: uppercase;
+}
+
+/* Navigation */
+nav{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+.nav-menu{
+    justify-self: end;
+}
+
+.nav-menu li{
+    display:inline;
+    margin: 0 1rem;
+}
+.nav-link{
+    text-decoration: none;
+    color:black;
+}
+
+.mobile-nav-toggle {
+    display:none;
+    cursor: pointer;
+    justify-self: end;
+}
+
+@media (max-width:40em){
+    nav{
+        grid-template-columns: 1fr 1fr;
+}
+.mobile-nav-toggle{
+    display:block;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0);
+    border:none;
+    box-shadow: none;
+}
+.mobile-nav-toggle:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.icon-close {
+    display:none;
+}
+.icon-hamburger{
+    display:block;
+}
+.nav-menu{
+    display:none;
+    grid-column: span 2;
+    justify-self: center;
+    text-align:center;
+    padding:0;    
+}
+.nav-menu li{
+    display: block;
+    margin: 1rem;
+    width: 90vw;
+    max-width: 20rem;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    background-color:#d40055;
+}
+.nav-link{
+    text-align: center;
+    color:white;
+    padding: 1rem;
+    display: block;
+}
+.nav-link:hover {
+    background-color:#00829c;
+}
+}
+
+.logo-wrapper{
+    display:flex;
+}
+
+.logo {
+    max-width:4em;
+}
+
+/* Footer */
+footer{
+    background-color: #d40055;
+    color:white;
+    padding: 2em;
+    text-align: center;
+    border-width: 7px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      aqua, 
+      rgba(0, 0, 0, 0)
+    ) 1 60%;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+.is-visible {
+    display:block;
 }
