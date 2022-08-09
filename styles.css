@@ -1,11 +1,15 @@
 /* Write your CSS here! */
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 8px;
     display: block;
     max-width:80rem;
     background-color: #F5F1DC;
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 1.7;
+    /* border:1px solid black; */
 }
 p.funParagraph {
     color: green;
@@ -13,12 +17,19 @@ p.funParagraph {
 #mainHeading{
     color:red;
 }
+p,h1,h3{
+    margin:4vw;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
 
 img {
     max-width:100%;
+    /* border: 1px solid black */
 }
 figure{
-    width:100vw;
+    width:100%;
     margin:0;
     padding:0;
 }
@@ -30,9 +41,7 @@ figcaption{
 .svg{
     width:1rem;
 }
-h1, h2 {
-    text-transform: uppercase;
-}
+
 
 /* Navigation */
 nav{
@@ -111,6 +120,72 @@ nav{
 .logo {
     max-width:4em;
 }
+
+/* Content  */
+#intro, #bakery{
+    padding:5em 0;
+}
+h1{
+    font-size: 6rem;
+    line-height:3rem;
+    color:#d40055;
+}
+.subtitle{
+    font-weight:700;
+    font-size: 1.5rem;
+    color:#00829c;
+}
+.site-statement{
+    font-weight:700;
+    font-size:1.25rem;
+    line-height: 1.5rem;;
+    margin-top:3rem;
+    color:#d40055;
+}
+h2{
+    font-size: 10vw;
+    line-height:2.1rem;
+    margin:0;
+    text-shadow:rgb(212, 0, 85);
+}
+h3{
+    font-size:1.8rem;
+    line-height:2.1rem;
+    margin:4rem;
+    text-transform: uppercase;
+}
+.pink-text{
+    color:#d40055;
+}
+.pink-bg {
+    background-color:rgb(212, 0, 85);
+    color:#F5F1DC;
+    margin:0;
+    padding:2rem 0;
+    width:100%;
+    position:relative;
+}
+.bg-number{
+    position:absolute;
+    color:rgb(245, 241, 220, 0.4);
+    top:0;
+    left:.25rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:15rem;
+    font-weight:900;
+    line-height: 12rem;
+    padding:0;
+    margin:0;
+}
+.recipe{
+    background-color:#F5F1DC;
+    border-radius: 17px;
+    color: black;
+    margin:4rem 2rem;
+    padding: 2rem 1rem;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
 
 /* Footer */
 footer{
