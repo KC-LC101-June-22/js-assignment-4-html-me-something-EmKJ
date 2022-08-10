@@ -4,6 +4,7 @@ html{
 }
 body{
     margin: 8px;
+    padding: auto;
     display: block;
     max-width:80rem;
     background-color: #F5F1DC;
@@ -19,6 +20,7 @@ p.funParagraph {
 }
 p,h1,h3{
     margin:4vw;
+    max-width:60ch;
 }
 h1, h2 {
     text-transform: uppercase;
@@ -31,7 +33,7 @@ img {
 figure{
     width:100%;
     margin:0;
-    padding:0;
+    padding:3rem 0 0 0;
 }
 figcaption{
     text-align: right;
@@ -44,23 +46,37 @@ figcaption{
 
 
 /* Navigation */
+.logo{
+    width:300px;
+    margin:auto 1rem;;
+    padding:0;
+}
 nav{
     display:grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.logo{
+    width:clamp(110px, 14vw, 180px);
+}
+.brand-name{
+    font-weight: 700;
+    font-size:2vw;
+    text-transform: uppercase;
 }
 .nav-menu{
     justify-self: end;
+    padding:0;
 }
-
 .nav-menu li{
     display:inline;
     margin: 0 1rem;
+    vertical-align: top;
 }
 .nav-link{
     text-decoration: none;
     color:black;
 }
-
 .mobile-nav-toggle {
     display:none;
     cursor: pointer;
@@ -113,17 +129,11 @@ nav{
 }
 }
 
-.logo-wrapper{
-    display:flex;
-}
 
-.logo {
-    max-width:4em;
-}
 
 /* Content  */
 #intro, #bakery{
-    padding:5em 0;
+    padding:0;
 }
 h1{
     font-size: 6rem;
@@ -144,8 +154,9 @@ h1{
 }
 h2{
     font-size: 10vw;
+    font-weight:700;
     line-height:2.1rem;
-    margin:0;
+    margin:3rem 0 0 0;
     text-shadow:rgb(212, 0, 85);
 }
 h3{
@@ -157,13 +168,35 @@ h3{
 .pink-text{
     color:#d40055;
 }
-.pink-bg {
-    background-color:rgb(212, 0, 85);
+.blue-text{
+    color:#00829c;
+    background-color: #d40055;
+    margin:0;
+    padding:6rem 0 0 0;
+}
+.white-text{
     color:#F5F1DC;
+    background-color: #00829c;
+    margin:0;
+    padding:6rem 0 0 0;
+}
+aside {
+    padding:0 0 3rem 0;
+    margin: 0;
+}
+.pink-bg, .blue-bg {
     margin:0;
     padding:2rem 0;
     width:100%;
     position:relative;
+}
+.pink-bg {
+    background-color:#d40055;
+    color:#F5F1DC;
+}
+.blue-bg {
+    background-color:#00829c;
+    color:#F5F1DC;
 }
 .bg-number{
     position:absolute;
@@ -182,8 +215,16 @@ h3{
     border-radius: 17px;
     color: black;
     margin:4rem 2rem;
-    padding: 2rem 1rem;
+    padding: 2rem 3rem 2rem 2rem;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.recipe-title{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+@media (max-width:40em){
+    
 }
 
 
