@@ -1,8 +1,225 @@
 <!DOCTYPE html>
 <html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
+  <head>
+    <title>Exciting Oatmeal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="color-scheme" content="light dark" /> -->
+    <link rel="stylesheet" href="styles.css" class="style" />
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <!-- To meet assignment grading requirements. :p -->
+    <p id="mainHeading"></p>
+    <p id="testP" class="funParagraph"></p>
+    <!-- Actual content -->
+    <nav>
+      <img src="images/logo.svg" alt="" class="logo" />
+      <button class="mobile-nav-toggle">
+        <img class="svg icon-hamburger" src="images/icon-hamgurger.svg" alt="" />
+        <img class="svg icon-close" src="images/icon-close.svg" alt="" />
+      </button>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#intro">Why Oats</a></li>
+        <li><a class="nav-link" href="#oatmeal">Oatmeal</a></li>
+        <li><a class="nav-link" href="#bakery">Baking</a></li>
+        <li><a class="nav-link" href="#aboutoats">Fun Facts</a></li>
+      </ul>
+    </nav>
+    <header id="poll">
+      <p class="poll-question">Do you think oats are boring?</p>
+      <img
+        class="poll-img"
+        id="picky-img"
+        src="images/picky-eater.jpg"
+        alt="child turning away from bowl of food in disgust"
+      />
+      <img
+        class="poll-img"
+        id="yum-img"
+        src="images/toddler-eating.webp"
+        alt="child very enthusiastically eating from a spoon"
+      />
+      <div class="button-wrap">
+        <button class="btn-yes">YES</button>
+        <button class="btn-no">NO</button>
+      </div>
+    </header>
+    <main>
+      <section id="intro">
+        <h1>Oats</h1>
+        <p class="subtitle">Breakfast Flavored Glue?</p>
+        <p>
+          Oats are a great fit for a small budget. They are low effort and quick to cook when life gets busy. They're
+          also healthy: good for your heart, gut and blood-sugar. They can help with weight loss and...on their own they
+          are not much different from eating cardboard.
+        </p>
+        <p class="site-statement">
+          I hope I can inspire you to add oats to your meals by showing you my favorite recipes (that arent glue-y or
+          boring).
+        </p>
+      </section>
+      <section id="oatmeal">
+        <h2 class="pink-text">oatmeal 2 ways</h2>
+        <div class="pink-bg" id="sweet">
+          <p class="bg-number">1</p>
+          <h3>Homemade instant oatmeal is better</h3>
+          <p>
+            Packaged oatmeal is sometimes pricey, sometimes too sweet and often times glue-y. My favorite instant
+            oatmeal recipe adds in flax and chia for more complex flavor, better texture and bonus healthy stuff!
+          </p>
+          <p>healthy stuff +1</p>
+          <p>Then promptly adds in maple syrup and cream so it's not <em>too</em> healthy. Recipe below the break!</p>
+          <p class="pro-tip">
+            &#9734; Add a pinch of salt. Adding salt can make sweet foods taste better. Because
+            <a href="https://www.science.org/content/article/why-adding-salt-makes-fruit-and-candy-sweeter">science!</a>
+          </p>
+          <figure>
+            <img
+              src="images/Blueberries+and+Cream+Oatmeal.jpg"
+              alt="a bowl of creamy oatmeal with blueberry compote and chopped almonds"
+            />
+            <figcaption>
+              <a href="https://www.rachaelhartleynutrition.com/blog/2014/11/healthy-fruit-and-cream-oatmeal">
+                Blueberries and Cream Oatmeal Recipe
+              </a>
+              | Rachael Hartley Nutrition
+            </figcaption>
+          </figure>
+        </div>
+        <div class="pink-bg" id="savory">
+          <p class="bg-number">2</p>
+          <h3>The case for savory oatmeal</h3>
+          <p>What if you don't like sweet food? What if you just want to mix things up a bit in your kitchen?</p>
+          <p>
+            Most of the recipes and pre packaged oatmeal I see are sweet. Oatmeal can be savory too! Try adding veggies
+            or cheese, cooking with stock instead of water, and even topping with a fried egg. Yum~
+          </p>
+          <figure>
+            <img
+              src="images/Cheesy-Oatmeal-Fried-Egg.jpg"
+              alt="hands holding a dish of oatmeal, topped with veggies and a fried egg"
+            />
+            <figcaption>
+              <a href="https://healthynibblesandbits.com/savory-oatmeal-cheddar-and-fried-egg/#recipe"
+                >Savory Oatmeal with Cheddar and Fried Egg</a
+              >
+              | Healthy Nibbles
+            </figcaption>
+          </figure>
+          <article class="recipe" id="instant-oatmeal">
+            <p class="recipe-title">Homemade Instant Oatmeal</p>
+            <p>Ingredients</p>
+            <ul class="ingredients">
+              <li>4 Cups + 1 Cup - Rolled Oats(Divided)</li>
+              <li>1/6 Cup (17g) - Ground Flax</li>
+              <li>1/4 Cup (35g) - Chia Seeds</li>
+              <li>1 Tablespoon - Salt</li>
+              <li>Freeze Dried, Frozen or Fresh Fruit(Optional)</li>
+              <li>Pecans, Sliced Almonds or English Walnuts(optional)</li>
+            </ul>
+            <p>Instructions</p>
+            <ol>
+              <li>Using a blender, food processor or spice grinder, process 1 cup oats until powdery.</li>
+              <li>Add all oats, chia, flax and salt to an airtight container and shake to combine.</li>
+            </ol>
+            <p>To Serve</p>
+            <ol>
+              <li>
+                Add 1/3 cup instant oatmeal mix and 1 cup water to a microwave safe container. Add fruit, if using.
+              </li>
+              <li>Stir well.</li>
+              <li>Microwave on high for 3 minutes. Watch to make sure it doesn't boil over!</li>
+              <li>Top with cream, maple syrup and nuts.</li>
+            </ol>
+            <p>Notes:</p>
+            <ul>
+              <li>Freeze dried fruits travel really well.</li>
+              <li>You can pre-portion this recipe into baggies or mason jars.</li>
+              <li>
+                I like to pack up 1/3 cup of oatmeal mix with a handful of freeze dried strawberries in a 1 pint mason
+                jar to take with me to work.
+              </li>
+              <li>
+                The flavor combinations are endless: apple-cinnamon-pecan, blueberry-vanilla, peanut butter, nutella,
+                banana/almond. A quick google search might turn up a new favorite!
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section id="bakery">
+        <h2 class="blue-text">BAKED OATS x3</h2>
+        <div class="blue-bg" id="cookies">
+          <p class="bg-number">1</p>
+          <h3>Cookies</h3>
+          <p>
+            Oatmeal lace cookies are essentially just oatmeal held together with caramel. They're crispy around the
+            edges, chewy in the center and so simple to make.
+          </p>
+          <p class="pro-tip">
+            &#9734; Buy a digital scale and ditch your measuring cups. Using a scale lets you be sure that you've
+            followed the recipe exactly right. You'll also (probably) work faster and make fewer dirty dishes! Need more
+            convincing? Check out
+            <a href="https://www.nytimes.com/wirecutter/blog/improve-your-baking/">this article</a> by Wirecutter.
+          </p>
+          <figure>
+            <img src="images/lace-oatmeal-cookies.jpg" alt="thin oatmeal cookies on a cooling rack" />
+            <figcaption>
+              <a href="https://damnspicy.com/crispy-oatmeal-lace-cookies/#recipe">Crispy Oatmeal Lace Cookies</a> |
+              Damn, Spicy!
+            </figcaption>
+          </figure>
+        </div>
+        <div class="blue-bg" id="muffins">
+          <p class="bg-number">2</p>
+          <h3>Muffins</h3>
+          <p>
+            Hands down the best way to bake bananas. There's a nominal amount of oats in this, but who's counting!
+            They're delicious.
+          </p>
+          <figure>
+            <img src="images/Banana-Crunch-Muffins.jpg" alt="banana crunch muffin on a wooden cutting board" />
+            <figcaption>
+              <a href="https://www.spendwithpennies.com/banana-nut-muffins-pecan-crunch/">Banana Nut Crunch Muffins</a>
+              | Spend With Pennies
+            </figcaption>
+          </figure>
+        </div>
+        <div class="blue-bg" id="bread">
+          <p class="bg-number">3</p>
+          <h3>Bread</h3>
+          <p>
+            Here's one of my go-to bread recipes. It's only 7 ingredients and 4 steps. Start to finish it takes about 10
+            minutes of hands-on time. The addition of oatmeal makes this bread turn out super soft, just like store
+            bought bread.
+          </p>
+          <p class="pro-tip">
+            &#9734; I like to substitute the honey for a 50/50 sugar/molasses mix. The molasses addition makes the bread
+            similar in taste to the brown bread served at places like Cheesecake Factory and Outback Steakhouse.
+          </p>
+          <figure>
+            <img src="images/oatmeal-bread.jpg" alt="sliced oatmeal bread on a white marble countertop" />
+            <figcaption>
+              <a href="https://www.kingarthurbaking.com/recipes/back-of-the-bag-oatmeal-bread-recipe"
+                >Back-of-the-Bag Oatmeal Bread</a
+              >
+              | King Arthur Baking
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <aside class="white-bg" id="aboutoats">
+        <h2 class="white-text">Did you know?</h2>
+        <p>Naturally gluten free</p>
+        <p>Basic oat structure: hull, bran, germ</p>
+        <p>So glue-y, it actually <em>is</em> used as a glue extender</p>
+        <p>
+          Used in cosmetics because it's moisturizing for your skin. Also, just like it's a prebiotic for your gut, it
+          can be a prebiotic for beneficial skin bacteria that effect things like psoriosis.
+        </p>
+        <p>Hulls are beneficial against tooth decay</p>
+      </aside>
+    </main>
+    <footer><p>So how'd I do? Are you convinced?</p></footer>
+  </body>
 </html>

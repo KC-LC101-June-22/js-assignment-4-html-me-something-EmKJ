@@ -1,1 +1,289 @@
 /* Write your CSS here! */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 8px;
+    display: block;
+    max-width:80rem;
+    background-color: #F5F1DC;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    /* border:1px solid black; */
+}
+p.funParagraph {
+    color: green;
+}
+#mainHeading{
+    color:red;
+}
+p,h1,h3{
+    margin:4vw;
+    max-width:60ch;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
+
+img {
+    max-width:100%;
+    /* border: 1px solid black */
+}
+figure{
+    width:100%;
+    margin:0;
+    padding:3rem 0 0 0;
+}
+figcaption{
+    text-align: right;
+    font-size: .8em;
+    margin-right: 2em;
+}
+.svg{
+    width:1rem;
+}
+/* Poll */
+#poll{
+    position:relative;
+}
+.poll-img{  
+    height:70vh;
+    width:100vw;  
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%,  rgba(0,0,0,0));
+}
+#picky-img{
+    display:none;
+}
+.poll-question{
+    position:absolute;
+    bottom: 90px;
+    font-size:5.8vw;
+    font-weight:700;
+}
+.button-wrap{
+    display:flex;
+    width:100%;
+}
+.btn-no, .btn-yes{
+    width:49%;
+    height:7vh;
+    flex-grow:1;
+    font-size:1.5rem;
+    color:#F5F1DC;
+    text-transform: uppercase;
+    cursor:pointer;
+    margin-bottom: 4rem;
+}
+.btn-no{
+    background-color:#00829c;
+}
+.btn-yes{
+    background-color:#d40055;
+}
+/* Navigation */
+.logo{
+    width:300px;
+    margin:auto 1rem;;
+    padding:0;
+}
+nav{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.logo{
+    width:clamp(110px, 14vw, 180px);
+}
+.brand-name{
+    font-weight: 700;
+    font-size:2vw;
+    text-transform: uppercase;
+}
+.nav-menu{
+    justify-self: end;
+    padding:0;
+}
+.nav-menu li{
+    display:inline;
+    margin: 0 1rem;
+    vertical-align: top;
+}
+.nav-link{
+    text-decoration: none;
+    color:black;
+}
+.mobile-nav-toggle {
+    display:none;
+    cursor: pointer;
+    justify-self: end;
+}
+
+@media (max-width:40em){
+    nav{
+        grid-template-columns: 1fr 1fr;
+}
+.mobile-nav-toggle{
+    display:block;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0);
+    border:none;
+    box-shadow: none;
+}
+.mobile-nav-toggle:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.icon-close {
+    display:none;
+}
+.icon-hamburger{
+    display:block;
+}
+.nav-menu{
+    display:none;
+    grid-column: span 2;
+    justify-self: center;
+    text-align:center;
+    padding:0;    
+}
+.nav-menu li{
+    display: block;
+    margin: 1rem;
+    width: 90vw;
+    max-width: 20rem;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    background-color:#d40055;
+}
+.nav-link{
+    text-align: center;
+    color:white;
+    padding: 1rem;
+    display: block;
+}
+.nav-link:hover {
+    background-color:#00829c;
+}
+}
+
+
+
+/* Content  */
+#intro, #bakery{
+    padding:0;
+}
+h1{
+    font-size: 6rem;
+    line-height:3rem;
+    color:#d40055;
+}
+.subtitle{
+    font-weight:700;
+    font-size: 1.5rem;
+    color:#00829c;
+}
+.site-statement{
+    font-weight:700;
+    font-size:1.25rem;
+    line-height: 1.5rem;;
+    margin-top:3rem;
+    color:#d40055;
+}
+h2{
+    font-size: 10vw;
+    font-weight:700;
+    line-height:2.1rem;
+    margin:3rem 0 0 0;
+    text-shadow:rgb(212, 0, 85);
+}
+h3{
+    font-size:1.8rem;
+    line-height:2.1rem;
+    margin:4rem;
+    text-transform: uppercase;
+}
+.pink-text{
+    color:#d40055;
+}
+.blue-text{
+    color:#00829c;
+    background-color: #d40055;
+    margin:0;
+    padding:6rem 0 0 0;
+}
+.white-text{
+    color:#F5F1DC;
+    background-color: #00829c;
+    margin:0;
+    padding:6rem 0 0 0;
+}
+aside {
+    padding:0 0 3rem 0;
+    margin: 0;
+}
+.pink-bg, .blue-bg {
+    margin:0;
+    padding:2rem 0;
+    width:100%;
+    position:relative;
+}
+.pink-bg {
+    background-color:#d40055;
+    color:#F5F1DC;
+}
+.blue-bg {
+    background-color:#00829c;
+    color:#F5F1DC;
+}
+.bg-number{
+    position:absolute;
+    color:rgb(245, 241, 220, 0.4);
+    top:0;
+    left:.25rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:15rem;
+    font-weight:900;
+    line-height: 12rem;
+    padding:0;
+    margin:0;
+}
+.recipe{
+    background-color:#F5F1DC;
+    border-radius: 17px;
+    color: black;
+    margin:4rem 2rem;
+    padding: 2rem 3rem 2rem 2rem;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.recipe-title{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+@media (max-width:40em){
+    
+}
+
+
+/* Footer */
+footer{
+    background-color: #d40055;
+    color:white;
+    padding: 2em;
+    text-align: center;
+    border-width: 7px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      aqua, 
+      rgba(0, 0, 0, 0)
+    ) 1 60%;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+.is-visible {
+    display:block;
+}
